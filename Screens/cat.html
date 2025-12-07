@@ -34,14 +34,68 @@ h2 {
 p {
 color: #EFE5CE;
 }
+
+p.left-aligned {
+    text-align: left;
+}
+
+p.right-aligned {
+    text-align: right;
+}
+
+p.center-aligned {
+    text-align: center;
+}
+
+p.justified-text {
+    text-align: justify;
+}
+
+.tab button {
+    font-style: bold;
+    padding: 5px;
+    background-color: #2F2918;
+    border: 30px solid transparent;
+    border-image: url('https://github.com/bleuberri/Deck-of-Many-Stars/blob/main/Resources/border.png?raw=true') 25 round;
+    color: #EFE5CE;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+.tab button:hover {
+    font-style: bold;
+    padding: 5px;
+    background-color: #655934;
+    border: 30px solid transparent;
+    border-image: url('https://github.com/bleuberri/Deck-of-Many-Stars/blob/main/Resources/border.png?raw=true') 25 round;
+    color: #EFE5CE;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+.tab button:active {
+font-style: bold;
+    padding: 5px;
+    background-color: #2F2918;
+    border: 30px solid transparent;
+    border-image: url('https://github.com/bleuberri/Deck-of-Many-Stars/blob/main/Resources/border.png?raw=true') 25 round;
+    color: #EFE5CE;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+.tabcontent {
+      display: none; /* Hide all content by default */
+}
+
 html, html * {
 		cursor: url(https://i.imgur.com/tjIyrtm.png), auto;
-	}
+}
 
 .fullbody {
     color: #2F2918;
     background-color: #EFE5CE;
-  }
+}
 
 .character {
     align-items: center;
@@ -57,11 +111,14 @@ html, html * {
     font-size: 15px;
     border-radius: 20px;
     width: 100px;
-  }
+}
 
 img {
     width: 100px;
     height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
@@ -116,6 +173,42 @@ a.button:hover {
 }
 
 .world:hover {
+  font-style: bold;
+  padding: 5px;
+  background-color: #655934;
+  border: 30px solid transparent;
+  border-image: url('https://github.com/bleuberri/Deck-of-Many-Stars/blob/main/Resources/border.png?raw=true') 25 round;
+  color: #EFE5CE;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+a:link, a:visited {
+  font-style: bold;
+  color: #EFE5CE;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  font-style: bold;
+  color: #EFE5CE;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.collapsible {
+  font-style: bold;
+    padding: 5px;
+    background-color: #2F2918;
+    border: 30px solid transparent;
+    border-image: url('https://github.com/bleuberri/Deck-of-Many-Stars/blob/main/Resources/border.png?raw=true') 25 round;
+    color: #EFE5CE;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+.active, .collapsible:hover {
   font-style: bold;
   padding: 5px;
   background-color: #655934;
@@ -193,6 +286,8 @@ a.button:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: space-around;
+  margin-bottom: 10px;
   padding: 2px;
   gap: 5px;
   color: #2F2918;
@@ -239,23 +334,36 @@ hr {
 </head>
 
 <body>
-    <button class="world"><i class="fa-solid fa-arrow-left-long"></i> Previous Cat</button> <button class="world"> Next Cat <i class="fa-solid fa-arrow-right-long"></i></button>
-    <a href="https://bleuberri.github.io/Deck-of-Many-Stars/"><i class="fa-solid fa-arrow-left-long"></i> Back</a>
-    <h1>Prefixsuffix</h1>
+    <div style="width: 100%; height: 100px;">
+        <span style="float: left;">
+            <button class="world"><a href="https://bleuberri.github.io/Deck-of-Many-Stars/"><i class="fa-solid fa-arrow-left-long"></i> Back</a></button>
+        </span>
+        <span style="width: 350px;display: block;margin: 0 auto;">
+            <button class="world"><i class="fa-solid fa-arrow-left-long"></i> Previous Cat</button>
+            <button class="world"> Next Cat <i class="fa-solid fa-arrow-right-long"></i></button>
+        </span>
+    </div>
     <div class="container">
         <div class="column">
-           <img src="https://github.com/bleuberri/Deck-of-Many-Stars/blob/main/Sprites/Blankcat.png?raw=true" alt="Blankcat">
+            <h1>Prefixsuffix</h1>
+           <img src="https://github.com/bleuberri/Deck-of-Many-Stars/blob/main/Sprites/Blankcat.png?raw=true" alt="Blankcat" style="width:200px;height:200px;">
            <div class="row3">
                 <b><i class="fa-solid fa-moon"></i> Age:</b> X Moons
             </div>
            <div class="row3">
-                <b><i class="fa-solid fa-venus-mars"></i> Gender:</b> Gender (Pronouns)
+                <b><i class="fa-solid fa-dna"></i> Gender:</b> Gender
+            </div>
+            <div class="row3">
+                <b><i class="fa-solid fa-user"></i> Pronouns:</b> Pronouns
+            </div>
+            <div class="row3">
+                <b><i class="fa-solid fa-heart"></i> Orientation:</b> Orientation (Flag)
             </div>
            <div class="row3">
                 <b><i class="fa-solid fa-paw"></i> Status:</b> NameClan Rank
             </div>
            <div class="row3">
-                <b><i class="fa-solid fa-heart"></i> Trait:</b> Trait
+                <b><i class="fa-solid fa-peace"></i> Trait:</b> Trait
             </div>
            <div class="row3">
                 <b><i class="fa-solid fa-star"></i> Skills:</b> Skills
@@ -266,20 +374,92 @@ hr {
         </div>
 
         <div class="column2">
-            <h2>Appearance</h2>
-            <div class="row">
-                Appearance information goes here.
+
+            <div class="tab" style="text-align: center;">
+                <button class="tablinks" onclick="openTab(event, 'Relations')"><i class="fa-solid fa-user-group"></i></button>
+                <button class="tablinks" onclick="openTab(event, 'Profile')" id="defaultOpen"><i class="fa-solid fa-circle-info"></i></button>
             </div>
-            <h2>Personality</h2>
-            <div class="row">
-                Personality information goes here.
+
+            <div id="Relations" class="tabcontent">
+                <h1>Relations</h1>
+                
+                <div class="container">
+                    <div class="column">
+                        <h2>Affiliations</h2>
+                            <div class="row3">
+                                <b>Current:</b>
+                            </div>
+                                <div class="row3">
+                                <b>Past:</b>
+                            </div>
+                        <h2>Education</h2>
+                            <div class="row3">
+                                <b>Mentor:</b>
+                            </div>
+                                <div class="row3">
+                                <b>Apprentice:</b>
+                            </div>
+                        <!-- Deputyhood/Leadership: Preceeded by/Succeeded by-->
+                    </div>
+                    <div class="column2">
+                        <h2>Kindred</h2>
+                            <div class="row3">
+                                <b>Mother:</b>
+                            </div>
+                                <div class="row3">
+                                <b>Father:</b>
+                            </div>
+                            <!-- Foster/Half Siblings, Mate, (Bio/Adopted) Offspring-->
+                    </div>
+                </div>
+                
             </div>
-            <h2>Backstory</h2>
-            <div class="row">
-                Backstory information goes here.
+
+            <div id="Profile" class="tabcontent">
+                <h1>Profile</h1>
+                <div class="container">
+                    <div class="column">
+                        <h2>Appearance</h2>
+                        <div class="row">
+                            Appearance information goes here.
+                        </div>
+                    </div>
+
+                    <div class="column2">
+                        <h2>Personality</h2>
+                        <div class="row">
+                            Personality information goes here.
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Backstory</h2>
+                <div class="row">
+                    Backstory information goes here.
+                </div>
+
             </div>
         </div>
     </div>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 
