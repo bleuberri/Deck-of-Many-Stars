@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-<!-- To Do -->
-<!-- Background: Toggle Location / Light|Dark Mode / Season -->
-
 <style>
 body {
   font-family: "Raleway", sans-serif;
@@ -83,6 +80,28 @@ button:hover {
   color: #655934;
   font-size: 15px;
   border-radius: 20px;
+}
+
+a.button {
+    font-style: bold;
+    padding: 5px;
+    background-color: #2F2918;
+    border: 30px solid transparent;
+    border-image: url('Resources/border.png') 25 round;
+    color: #EFE5CE;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+a.button:hover {
+    font-style: bold;
+    padding: 5px;
+    background-color: #655934;
+    border: 30px solid transparent;
+    border-image: url('Resources/border.png') 25 round;
+    color: #EFE5CE;
+    font-size: 15px;
+    border-radius: 30px;
 }
 
 .world {
@@ -168,7 +187,24 @@ button:hover {
   border-radius: 30px;
   box-sizing: border-box; /* Includes padding in element's total width */
   align-items: center;
-  }
+}
+
+.row3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2px;
+  gap: 5px;
+  color: #2F2918;
+  background: #EFE5CE;
+  border-radius: 20px;
+  border: 2px solid #EFE5CE;
+  border: 30px solid transparent;
+  border-image: url('Resources/border2.png') 25 round;
+  border-radius: 30px;
+  box-sizing: border-box; /* Includes padding in element's total width */
+  align-items: center;
+}
 
 hr {
   flex: 1;
@@ -203,82 +239,47 @@ hr {
 </head>
 
 <body>
-<h1><img src="Resources/title.png" alt="doms_icon" style="width: 272px; height: 32px;"></h1>
-<p><center><button class="world"><i class="fa-solid fa-arrows-rotate"></i> New World</button>  <button class="world"> <i class="fa-solid fa-gear"></i> Load World</button> <button class="world"><i class="fa-solid fa-pencil"></i> Edit World</button></center></p>
-<div class="container">
-  <div class="column">
-    <h1>The Trait and Trait</h1>
-    <h2>Origin</h2>
-      <div class="row">
-        Origin goes here.
-      </div>
-    <h2>Reputation</h2>
-      <div class="row">
-        Reputation goes here.
-      </div>
-    <h2>Discourse</h2>
-      <div class="row">
-        Internal discourse goes here.
-      </div>
-    <h2>Conflict</h2>
-      <div class="row">
-        External conflict goes here.
-      </div>
-  </div>
+    <button class="world"><i class="fa-solid fa-arrow-left-long"></i> Previous Cat</button> <button class="world"> Next Cat <i class="fa-solid fa-arrow-right-long"></i></button>
+    <a href="https://bleuberri.github.io/Deck-of-Many-Stars/"><i class="fa-solid fa-arrow-left-long"></i> Back</a>
+    <h1>Prefixsuffix</h1>
+    <div class="container">
+        <div class="column">
+           <img src="Sprites/Blankcat.png" alt="Blankcat">
+           <div class="row3">
+                <b><i class="fa-solid fa-moon"></i> Age:</b> X Moons
+            </div>
+           <div class="row3">
+                <b><i class="fa-solid fa-venus-mars"></i> Gender:</b> Gender (Pronouns)
+            </div>
+           <div class="row3">
+                <b><i class="fa-solid fa-paw"></i> Status:</b> NameClan Rank
+            </div>
+           <div class="row3">
+                <b><i class="fa-solid fa-heart"></i> Trait:</b> Trait
+            </div>
+           <div class="row3">
+                <b><i class="fa-solid fa-star"></i> Skills:</b> Skills
+            </div>
+           <div class="row3">
+                <b><i class="fa-solid fa-book"></i> Backstory:</b> Backstory
+            </div>
+        </div>
 
-  <div class="column2">
-    <h1>NameClan</h1>
-    <div class="row2">
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><a href="Screens/cat.html"><button type="button">Prefixsuffix</button></a></span>
-      </div>
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><button type="button">Prefixsuffix</button></span> 
-      </div>
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><button type="button">Prefixsuffix</button></span>
-      </div>
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><button type="button">Prefixsuffix</button></span>
-      </div>
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <button type="button">Prefixsuffix</button> 
-      </div>
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><button type="button">Prefixsuffix</button></span>
-      </div>
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><button type="button">Prefixsuffix</button></span>
-      </div>
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><button type="button">Prefixsuffix</button></span>
-      </div>
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><button type="button">Prefixsuffix</button></span>
-      </div>
-      <div class="character">
-        <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><button type="button">Prefixsuffix</button></span>
-      </div>
+        <div class="column2">
+            <h2>Appearance</h2>
+            <div class="row">
+                Appearance information goes here.
+            </div>
+            <h2>Personality</h2>
+            <div class="row">
+                Personality information goes here.
+            </div>
+            <h2>Backstory</h2>
+            <div class="row">
+                Backstory information goes here.
+            </div>
+        </div>
     </div>
-    <h1>Cats Outside the Clan</h1>
-    <h1>StarClan</h1>
-    <h1>Unknown Residence</h1>
-    <h1>Dark Forest</h1>
-     
-
-  </div>
-
-</div>
 
 </body>
 
