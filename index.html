@@ -1,45 +1,284 @@
 <!DOCTYPE html>
 
+<!-- To Do -->
+<!-- Background: Toggle Location / Light|Dark Mode / Season -->
+
 <style>
 body {
-background-color: lightblue;
+  font-family: "Raleway", sans-serif;
+  color: #EFE5CE;
+  background-image: url('Resources/Backgrounds/forest/greenleaf_camp1_light.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
-color: red;
+  color: #EFE5CE;
+  background-color: #2F2918;
+  font-size: 25px;
+  text-align: center;
+  border: 30px solid transparent;
+  border-image: url('Resources/border.png') 25 round;
+  border-radius: 30px;
+}
+
+h2 {
+  color: #EFE5CE;
+  background-color: #655934;
+  font-size: 18px;
+  border: 30px solid transparent;
+  border-image: url('Resources/border.png') 25 round;
+  border-radius: 30px;
+  text-align: center;
+  opacity: 0.9;
 }
 
 p {
-color: navy;
+color: #EFE5CE;
+}
+html, html * {
+		cursor: url(https://i.imgur.com/tjIyrtm.png), auto;
+	}
+
+.fullbody {
+    color: #2F2918;
+    background-color: #EFE5CE;
+  }
+
+.character {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 10px;
+    order: 5;
+    display: inline-block;
+    vertical-align: top;
+    color: #2F2918;
+    background-color: #EFE5CE;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 100px;
+  }
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    font-style: bold;
+    background-color: #EFE5CE;
+    border: #EFE5CE;
+    color: #2F2918;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+button:hover {
+  font-style: bold;
+  background-color: #EFE5CE;
+  border: #EFE5CE;
+  color: #655934;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.world {
+    font-style: bold;
+    padding: 5px;
+    background-color: #2F2918;
+    border: 30px solid transparent;
+    border-image: url('Resources/border.png') 25 round;
+    color: #EFE5CE;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+.world:hover {
+  font-style: bold;
+  padding: 5px;
+  background-color: #655934;
+  border: 30px solid transparent;
+  border-image: url('Resources/border.png') 25 round;
+  color: #EFE5CE;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.container {
+  display: flex; /* Makes the container a flex container */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+}
+
+.column {
+  flex: 1; /* Distributes available space equally among columns */
+  padding: 5px;
+  gap: 15px;
+  color: #2F2918;
+  background-color: #B4A062;
+  border: 30px solid transparent;
+  border-image: url('Resources/border.png') 25 round;
+  border-radius: 30px;
+  box-sizing: border-box; /* Includes padding in element's total width */
+  opacity: 0.9;
+}
+
+.column2 {
+  flex: 2; /* Distributes available space equally among columns */
+  padding: 5px;
+  gap: 15px;
+  color: #2F2918;
+  background-color: #B4A062;
+  border: 30px solid transparent;
+  border-image: url('Resources/border.png') 25 round;
+  border-radius: 30px;
+  box-sizing: border-box; /* Includes padding in element's total width */
+  opacity: 0.9;
+}
+
+.row {
+  flex: 1; /* Distributes available space equally among columns */
+  padding: 15px;
+  gap: 20px;
+  color: #2F2918;
+  background: #EFE5CE;
+  border-radius: 20px;
+  border: 2px solid #EFE5CE;
+  border: 30px solid transparent;
+  border-image: url('Resources/border2.png') 25 round;
+  border-radius: 30px;
+  box-sizing: border-box; /* Includes padding in element's total width */
+  align-items: center;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  gap: 20px;
+  color: #2F2918;
+  background: #EFE5CE;
+  border-radius: 20px;
+  border: 2px solid #EFE5CE;
+  border: 30px solid transparent;
+  border-image: url('Resources/border2.png') 25 round;
+  border-radius: 30px;
+  box-sizing: border-box; /* Includes padding in element's total width */
+  align-items: center;
+  }
+
+hr {
+  flex: 1;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stacks columns vertically on smaller screens */
+  }
+  .column {
+    width: 100%; /* Ensures columns take full width when stacked */
+  }
+
+  .row {
+    display: flex; /* Ensures columns take full width when stacked */
+  }
 }
 </style>
 
 <html>
 <head>
+<link rel="icon" type="image/x-icon" href="/Resources/doms_icon.png">
 <link rel="stylesheet" href="path/to/your/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <title>Deck of Many Stars</title>
-
-<script>
-            function greet() {
-              alert("Hello!");
-            }
-          </script>
 
 </head>
 
 <body>
-<h1>Cats</h1>
-<h2>Clan Name</h2>
-<p>Cats List Here. This is a test edit! :)</p>
-<p><i class="fa-sharp fa-solid fa-user"></i> <-- Cool icon!</p>
+<h1><i class="fa-solid fa-star-half-stroke"></i> Deck of Many Stars <i class="fa-solid fa-star-half-stroke"></i></h1>
+<p><center><button class="world"><i class="fa-solid fa-arrows-rotate"></i> New World</button>  <button class="world"> <i class="fa-solid fa-gear"></i> Load World</button> <button class="world"><i class="fa-solid fa-pencil"></i> Edit World</button></center></p>
+<div class="container">
+  <div class="column">
+    <h1>The Trait and Trait</h1>
+    <h2>Origin</h2>
+      <div class="row">
+        Origin goes here.
+      </div>
+    <h2>Reputation</h2>
+      <div class="row">
+        Reputation goes here.
+      </div>
+    <h2>Discourse</h2>
+      <div class="row">
+        Internal discourse goes here.
+      </div>
+    <h2>Conflict</h2>
+      <div class="row">
+        External conflict goes here.
+      </div>
+  </div>
 
-<button onclick="greet()">Click Me</button>
-<script src="script.js">
-            document.getElementById("myButton").addEventListener("click", function() {
-              alert("Hello there!");
-            });
-          </script>
+  <div class="column2">
+    <h1>NameClan</h1>
+    <div class="row2">
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <span class="hr"><button type="button">Prefixsuffix</button></span>
+      </div>
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <span class="hr"><button type="button">Prefixsuffix</button></span> 
+      </div>
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <span class="hr"><button type="button">Prefixsuffix</button></span>
+      </div>
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <span class="hr"><button type="button">Prefixsuffix</button></span>
+      </div>
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <button type="button">Prefixsuffix</button> 
+      </div>
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <span class="hr"><button type="button">Prefixsuffix</button></span>
+      </div>
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <span class="hr"><button type="button">Prefixsuffix</button></span>
+      </div>
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <span class="hr"><button type="button">Prefixsuffix</button></span>
+      </div>
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <span class="hr"><button type="button">Prefixsuffix</button></span>
+      </div>
+      <div class="character">
+        <img src="Sprites/Blankcat.png" alt="Blankcat">
+        <span class="hr"><button type="button">Prefixsuffix</button></span>
+      </div>
+    </div>
+    <h1>Cats Outside the Clan</h1>
+    <h1>StarClan</h1>
+    <h1>Unknown Residence</h1>
+    <h1>Dark Forest</h1>
+     
+
+  </div>
+
+</div>
 
 </body>
 
