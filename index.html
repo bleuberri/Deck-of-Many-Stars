@@ -284,7 +284,7 @@ hr {
 
 <body>
 <h1><img src="Resources/title.png" alt="doms_icon" style="width: 272px; height: 32px;"></h1>
-<p><center><button class="world"><i class="fa-solid fa-arrows-rotate"></i> New World</button>  <button class="world"> <i class="fa-solid fa-gear"></i> Load World</button> <button class="world"><i class="fa-solid fa-pencil"></i> Edit World</button></center></p>
+<p><center><button class="world" id="generateWorld"><i class="fa-solid fa-arrows-rotate"></i> New World</button>  <button class="world"> <i class="fa-solid fa-gear"></i> Load World</button> <button class="world"><i class="fa-solid fa-pencil"></i> Edit World</button></center></p>
 
 <div class="container">
   <button type="button" class="collapsible"><i class="fa-solid fa-dice"></i> World Settings</button>
@@ -319,7 +319,7 @@ hr {
     <div class="row2">
       <div class="character">
         <img src="Sprites/Blankcat.png" alt="Blankcat">
-        <span class="hr"><a href="Screens/cat.html"><button type="button" class="catbutton">Thisisareallylongname</button></a></span>
+        <span class="hr"><a href="Screens/cat.html"><button type="button" class="catbutton" id="generated-name">Name</button></a></span>
       </div>
       <div class="character">
         <img src="Sprites/Blankcat.png" alt="Blankcat">
@@ -384,6 +384,8 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+
+<script src="script.js"></script>
 
 </body>
 
